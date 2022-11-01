@@ -466,3 +466,99 @@ hr {
     bottom: -80px;
     left: 55%;
 }
+
+
+/* Opportunities */
+.section__opportunities {
+    margin-bottom: 120px;
+}
+
+.oppo__content{
+    display: flex;
+    justify-content: space-between;
+}
+
+.oppo__table{
+    width: 45%;
+}
+
+.oppo__table__item {
+    margin-bottom: 10px;
+}
+
+.oppo__table__item__header {
+    position: relative;
+}
+
+.oppo__table__item__title {
+    padding: 25px 0;
+    padding-left: 60px;
+    
+
+    color: #333;
+    text-transform: uppercase;
+    font-weight: 700;
+
+    border: 1px solid #e5e5e5;
+}
+
+.oppo__table__item__icon {
+    font-size: 24px;
+    color: #95e1d3;
+
+    position: absolute;
+    top: 50%;
+    left: 15px;
+
+    transform: translateY(-50%);
+}
+
+.oppo__table__item__btn {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+
+    color: rgba(255, 255, 255, 0);
+
+    transform: translateY(-50%);
+}
+
+.oppo__table__item__btn::after {
+    content: "";
+    display: block;
+
+    width: 15px;
+    height: 15px;
+
+    position: absolute;
+    top: 50%;
+    right: 15px;
+
+    border-top: 3px solid #ccc;
+    border-left: 3px solid #ccc;
+
+    transform: translateY(-65%) rotate(225deg);
+}
+
+.oppo__table__item.active .oppo__table__item__btn::after {
+    transform: translateY(-35%) rotate(45deg);
+}
+
+.oppo__table__item__text {
+    padding: 20px 50px 30px 20px;
+
+    color: #999;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.5;
+    font-style: italic;
+    font-weight: 300;
+
+    display: none;
+
+    border: 1px solid #e5e5e5;
+    border-top: none;
+}
+
+.oppo__table__item.active .oppo__table__item__text{
+    display: block;
+}

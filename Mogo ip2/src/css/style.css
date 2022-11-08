@@ -562,3 +562,121 @@ hr {
 .oppo__table__item.active .oppo__table__item__text{
     display: block;
 }
+
+
+/* Comment */
+.section__comment {
+    padding: 10vh 0;
+
+    background-color: #f8f8f8;
+}
+
+.comment__next {
+    position: absolute;
+    top: 50%;
+    right: 1.5%;
+
+    color: rgba(255, 255, 255, 0);
+
+    transform: translateY(-50%);
+}
+
+.comment__next::after {
+    content: "";
+    display: block;
+
+    width: 1vw;
+    height: 2vh;
+
+    position: absolute;
+    top: 50%;
+    right: 1%;
+
+    border-top: 3px solid #ccc;
+    border-left: 3px solid #ccc;
+
+    transform: translateY(-65%) rotate(135deg);
+
+}
+
+.comment__prev {
+    position: absolute;
+    top: 50%;
+    left: 1.5%;
+
+    color: rgba(255, 255, 255, 0);
+
+    transform: translateY(-50%);
+}
+
+.comment__prev::after {
+    content: "";
+    display: block;
+
+    width: 1vw;
+    height: 2vh;    
+
+    position: absolute;
+    top: 50%;
+
+    border-top: 3px solid #ccc;
+    border-left: 3px solid #ccc;
+
+    transform: translateY(-65%) rotate(-45deg);
+
+}
+
+.comment__inner {
+    position: relative;
+}
+
+.comment__icon {
+    font-size: 3.5rem;
+    color: #95e1d3;
+
+    padding: 30px;
+
+    position: absolute;
+    left: 8.5vw;
+    top: 50%;
+
+    border: 3px solid #95e1d3;
+
+    transform: translateY(-50%);
+}
+
+.comment__text {
+    padding: 0 8.5vw 0 24vw;
+    margin-bottom: 15px;
+
+    color: #999;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.5;
+    font-style: italic;
+    font-weight: 300;
+    font-size: 24px;
+}
+
+.comment__author {
+    position: relative;
+
+    padding: 0 8.5vw 0 30vw;
+
+    font-family: 'Kaushan Script', cursive;
+    font-size: 24px;
+}
+
+.comment__author::before {
+    content: "";
+    display: block;
+    background-color:#f38181;
+
+    width: 60px;
+    height: 3px;
+
+    position: absolute;
+    top: 50%;
+    left: 24vw;
+
+    transform: translateY(-50%);
+}
